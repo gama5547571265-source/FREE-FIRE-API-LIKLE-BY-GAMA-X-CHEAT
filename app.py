@@ -35,7 +35,7 @@ jwt_tokens = {}
 jwt_tokens_lock = threading.Lock()  # قفل لحماية الوصول إلى jwt_tokens
 
 def get_jwt_token(uid, password):
-    url = f"https://app-py-amber.vercel.app/get?uid={uid}&password={password}"
+    url = f"https://jwt-maker-danger.vercel.app/token?uid=4171899180&password=71E8DCF31AAB78535DCCCC710B1F6433374FE700F17CC2B64EDE662E3BF92B6B"
     try:
         response = requests.get(url)
         if response.status_code == 200:
@@ -109,7 +109,7 @@ def FOX_RequestAddingFriend(token, target_id):
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "X-GA": "v1 1",
-        "ReleaseVersion": "OB47",
+        "ReleaseVersion": "OB50",
         "Host": "clientbp.common.ggbluefox.com",
         "Accept-Encoding": "gzip, deflate, br",
         "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
